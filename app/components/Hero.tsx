@@ -1,0 +1,165 @@
+import { FaCheck } from "react-icons/fa6";
+
+export function Hero() {
+  return (
+    <section className="relative overflow-hidden bg-slate-950 text-white md:pt-28 pt-24 pb-10">
+      {/* <div className="absolute inset-0 bg-[url('/images/hero-bg.jpg')] bg-cover bg-center opacity-60" />
+      <div className="absolute inset-0 bg-slate-950/80" /> */}
+      <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr] md:items-center">
+          <div className="max-w-2xl">
+            <h1 className="mt-6 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+              Transform Your Manuscript with <span className="text-orange-400">Our Amazon Book Publishing</span> Services
+            </h1>
+            <p className="mt-6 text-sm leading-7 text-slate-200">
+              We offer comprehensive publishing services that help authors publish their books on Amazon, Barnes & Noble, Lulu, Apple Books, IngramSpark, and other major book distribution platforms.
+            </p>
+            <ul className="mt-8 space-y-3 text-sm leading-6 text-slate-200">
+              <li className="flex items-start gap-3">
+                <FaCheck className="mt-1 h-4 w-4 shrink-0 text-orange-400" />
+                Expert Book Editing, Proofreading, and Formatting for Amazon
+              </li>
+              <li className="flex items-start gap-3">
+                <FaCheck className="mt-1 h-4 w-4 shrink-0 text-orange-400" />
+                Custom Book Cover Design with 10 Revisions for Self-Publishing
+              </li>
+              <li className="flex items-start gap-3">
+                <FaCheck className="mt-1 h-4 w-4 shrink-0 text-orange-400" />
+                Free ISBN for your self-published book
+              </li>
+              <li className="flex items-start gap-3">
+                <FaCheck className="mt-1 h-4 w-4 shrink-0 text-orange-400" />
+                Publishing in both e-book and paperback formats on Amazon
+              </li>
+              <li className="flex items-start gap-3">
+                <FaCheck className="mt-1 h-4 w-4 shrink-0 text-orange-400" />
+                10 Printed Paperbacks shipped directly to your doorstep from Amazon
+              </li>
+            </ul>
+            <div className="mt-10 flex flex-wrap gap-4">
+              <a
+                href="#"
+                className="inline-flex items-center justify-center rounded-full bg-[var(--theme-primary-color)] px-8 py-3 text-sm font-semibold text-white shadow-lg transition duration-200 hover:-translate-y-1 hover:opacity-95"
+              >
+                Chat Now
+              </a>
+              <a
+                href="#"
+                className="inline-flex items-center justify-center rounded-full border border-white/25 px-8 py-3 text-sm font-semibold text-white transition duration-200 hover:-translate-y-1 hover:bg-white/10"
+              >
+                Publish My Book
+              </a>
+              <a
+                href="tel:+13466132030"
+                className="inline-flex items-center justify-center rounded-full border border-white/25 px-8 py-3 text-sm font-semibold text-white transition duration-200 hover:-translate-y-1 hover:bg-white/10"
+              >
+                Call Now
+              </a>
+            </div>
+          </div>
+
+          <div className="rounded-[2rem] border border-white/10 text-slate-900 bg-white/95 p-6 shadow-2xl sm:p-8">
+            <div className="mb-4">
+              
+              <h2 className="text-2xl font-semibold text-slate-950">
+                Publish Your Book On Amazon
+              </h2>
+            </div>
+
+            <div className="space-y-3">
+              <select
+                defaultValue=""
+                aria-label="Do you have a manuscript ready?"
+                className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-2.5 text-xs outline-none focus:border-[var(--theme-primary-color)] focus:ring-2 focus:ring-orange-200"
+              >
+                <option value="" disabled>
+                  Do you have a manuscript ready?
+                </option>
+                <option value="ready">Yes, I'm ready to publish today</option>
+                <option value="1-3">Yes, I'll be ready to publish in 1 to 3 months</option>
+                <option value="3-6">Yes, I'll be ready to publish in 3 to 6 months</option>
+                <option value="no">No, I do not have a book or manuscript ready</option>
+              </select>
+
+              <select
+                defaultValue=""
+                aria-label="Have you published before?"
+                className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-2.5 text-xs outline-none focus:border-[var(--theme-primary-color)] focus:ring-2 focus:ring-orange-200"
+              >
+                <option value="" disabled>
+                  Have you published before?
+                </option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+
+              <select
+                defaultValue=""
+                aria-label="What type of book do you plan on publishing?"
+                className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-2.5 text-xs outline-none focus:border-[var(--theme-primary-color)] focus:ring-2 focus:ring-orange-200"
+              >
+                <option value="" disabled>
+                  What type of book do you plan on publishing?
+                </option>
+                <option value="business">Business</option>
+                <option value="biography">Biography</option>
+                <option value="inspirational">Inspirational</option>
+                <option value="nonfiction">Non-Fiction</option>
+                <option value="fiction">Fiction</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div className="mt-6 rounded-3xl border border-slate-200 bg-slate-50 p-4">
+              <p className="mb-3 text-xs font-medium text-slate-900">What services are you looking for?</p>
+              <div className="grid gap-3 sm:grid-cols-2">
+                {[
+                  "Self Publishing",
+                  "Editing",
+                  "Cover Design",
+                  "Audio book publishing",
+                  "Illustration",
+                  "Purchase ISBN",
+                ].map((service) => (
+                  <label
+                    key={service}
+                    className="flex items-center gap-2 rounded-2xl border border-slate-200 bg-white px-3 py-2 text-xs font-medium text-slate-700 transition hover:border-[var(--theme-primary-color)]"
+                  >
+                    <input
+                      type="checkbox"
+                      className="h-4 w-4 rounded border-slate-300 text-[var(--theme-primary-color)] focus:ring-[var(--theme-primary-color)]"
+                    />
+                    {service}
+                  </label>
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+              <input
+                aria-label="Your Name"
+                className="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-xs text-slate-700 outline-none focus:border-[var(--theme-primary-color)] focus:ring-2 focus:ring-orange-200"
+                placeholder="Your Name*"
+              />
+              <input
+                aria-label="Phone Number"
+                className="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-xs text-slate-700 outline-none focus:border-[var(--theme-primary-color)] focus:ring-2 focus:ring-orange-200"
+                placeholder="Phone No.*"
+              />
+            </div>
+
+            <input
+              aria-label="Email Address"
+              className="mt-4 w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-xs text-slate-700 outline-none focus:border-[var(--theme-primary-color)] focus:ring-2 focus:ring-orange-200"
+              placeholder="Email Address*"
+            />
+
+            <button className="mt-6 w-full rounded-full bg-[var(--theme-primary-color)] px-6 py-3 text-sm font-semibold text-white transition duration-200 hover:-translate-y-1 hover:opacity-95">
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
