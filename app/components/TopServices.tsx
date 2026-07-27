@@ -3,21 +3,25 @@ import React from "react";
 const services = [
   {
     title: "Manuscript Assessment",
+    image: "https://westwoodauthors.com/lp1/assets/images/mauscript.png",
     desc:
       "In order to assist authors in determining if their work is ready for publication and to provide expert criticism for enhancement, we provide manuscript evaluation services.",
   },
   {
     title: "Translation",
+    image: "https://westwoodauthors.com/lp1/assets/images/c-editing.png",
     desc:
       "Translating written material from one language into another enables authors to reach a wider readership and sell more copies of their publications.",
   },
   {
     title: "Distribution",
+    image: "https://westwoodauthors.com/lp1/assets/images/l-editing.png",
     desc:
       "We are among the top self-publishing businesses because of our extensive distribution network. We also take care of the authors' printing and distribution, which makes it simpler for them to self-publish on multiple platforms and reach global readers.",
   },
   {
     title: "Promotion",
+    image: "https://westwoodauthors.com/lp1/assets/images/proofreading.png",
     desc:
       "Our team of professionals offers marketing assistance, such as press releases and social media promotion, to authors so they may contact their audience and market their work.",
   },
@@ -38,13 +42,9 @@ export default function TopServices() {
               key={idx}
               className="flex flex-col rounded-lg bg-white p-6 shadow-md ring-1 ring-slate-100 md:h-96"
             >
-              <div className="flex items-start gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-md bg-slate-50">
-                  {/* simple svg icon */}
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 2v20" stroke="#111827" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M5 7h14" stroke="#111827" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
+              <div className="flex items-center gap-4">
+                <div className="flex h-16 w-16 items-center justify-center rounded-md bg-slate-50 p-3">
+                  <img src={s.image} alt={s.title} className="h-full w-full object-contain" />
                 </div>
                 <h3 className="text-lg font-semibold text-slate-900">{s.title}</h3>
               </div>

@@ -6,7 +6,11 @@ import { FiMenu, FiX } from "react-icons/fi";
 import Logo from "@/public/images/logo.webp";
 import Image from "next/image";
 
-export function Header() {
+interface HeaderProps {
+  onQuoteClick: () => void;
+}
+
+export function Header({ onQuoteClick }: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -16,7 +20,7 @@ export function Header() {
           <Image
             src={Logo}
             alt="Nexell Book Writing"
-            className="h-10 w-auto object-contain"
+            className="h-12 md:h-16 w-auto object-contain"
           />
         </Link>
 
@@ -33,12 +37,13 @@ export function Header() {
         <div
           className={`${isOpen ? "flex" : "hidden"} absolute inset-x-0 top-full flex-col gap-4 border-t border-slate-200 bg-[#f8f2eb] px-4 py-4 shadow-sm md:static md:flex md:w-auto md:flex-row md:items-center md:border-0 md:bg-transparent md:p-0 md:shadow-none`}
         >
-          <a
-            href="#"
-            className="inline-flex items-center justify-center rounded-full border border-[var(--theme-primary-color)] bg-transparent px-6 py-3 text-sm font-semibold text-[var(--theme-primary-color)] transition-transform duration-200 hover:-translate-y-1 hover:bg-[var(--theme-primary-color)] hover:text-white"
+          <button
+            type="button"
+            onClick={onQuoteClick}
+            className="inline-flex items-center justify-center rounded-full border border-[var(--theme-primary-color)] bg-[var(--theme-primary-color)] animate-theme-bounce animation-delay-250 px-6 py-3 text-sm font-semibold transition-transform duration-200 hover:-translate-y-1 hover:bg-[var(--theme-primary-color)] text-white"
           >
             Get a Quote
-          </a>
+          </button>
           <a
             href="tel:+13466132030"
             className="inline-flex items-center justify-center rounded-full border border-[var(--theme-primary-color)] px-6 py-3 text-sm font-semibold text-[var(--theme-primary-color)] transition duration-200 hover:-translate-y-1 hover:bg-[var(--theme-primary-color)] hover:text-white"

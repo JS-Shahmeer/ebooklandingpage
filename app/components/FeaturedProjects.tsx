@@ -110,7 +110,7 @@ export default function FeaturedProjects() {
             onClick={() => handleTabClick(idx)}
             className={`px-5 py-2 rounded-full text-sm font-semibold transition-transform duration-200 ${
               idx === active
-                ? "bg-[var(--theme-primary-color)] text-white shadow-lg"
+                ? "bg-[var(--theme-primary-color)] animate-theme-bounce text-white shadow-lg"
                 : "bg-slate-100 text-slate-700 hover:-translate-y-0.5"
             } focus:outline-none`}
           >

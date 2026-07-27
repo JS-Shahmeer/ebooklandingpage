@@ -1,6 +1,10 @@
 import { FaCheck } from "react-icons/fa6";
 
-export function Hero() {
+interface HeroProps {
+  onPublishClick: () => void;
+}
+
+export function Hero({ onPublishClick }: HeroProps) {
   return (
     <section className="relative overflow-hidden bg-slate-950 text-white md:pt-28 pt-24 pb-10">
       {/* <div className="absolute inset-0 bg-[url('/images/hero-bg.jpg')] bg-cover bg-center opacity-60" />
@@ -39,16 +43,17 @@ export function Hero() {
             <div className="mt-10 flex flex-wrap gap-4">
               <a
                 href="#"
-                className="inline-flex items-center justify-center rounded-full bg-[var(--theme-primary-color)] px-8 py-3 text-sm font-semibold text-white shadow-lg transition duration-200 hover:-translate-y-1 hover:opacity-95"
+                className="inline-flex items-center justify-center rounded-full bg-[var(--theme-primary-color)] animate-theme-bounce animation-delay-100 px-8 py-3 text-sm font-semibold text-white shadow-lg transition duration-200 hover:-translate-y-1 hover:opacity-95"
               >
                 Chat Now
               </a>
-              <a
-                href="#"
+              <button
+                type="button"
+                onClick={onPublishClick}
                 className="inline-flex items-center justify-center rounded-full border border-white/25 px-8 py-3 text-sm font-semibold text-white transition duration-200 hover:-translate-y-1 hover:bg-white/10"
               >
                 Publish My Book
-              </a>
+              </button>
               <a
                 href="tel:+13466132030"
                 className="inline-flex items-center justify-center rounded-full border border-white/25 px-8 py-3 text-sm font-semibold text-white transition duration-200 hover:-translate-y-1 hover:bg-white/10"
@@ -154,7 +159,7 @@ export function Hero() {
               placeholder="Email Address*"
             />
 
-            <button className="mt-6 w-full rounded-full bg-[var(--theme-primary-color)] px-6 py-3 text-sm font-semibold text-white transition duration-200 hover:-translate-y-1 hover:opacity-95">
+            <button className="mt-6 w-full rounded-full bg-[var(--theme-primary-color)] animate-theme-bounce animation-delay-300 px-6 py-3 text-sm font-semibold text-white transition duration-200 hover:-translate-y-1 hover:opacity-95">
               Get Started
             </button>
           </div>

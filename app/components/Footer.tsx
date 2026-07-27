@@ -1,12 +1,13 @@
 import React from "react";
 import Logo from "@/public/images/logo.webp";
 import Image from "next/image";
+import CustomerReview from "@/public/images/customer-review.webp";
 
 
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-b from-slate-900 to-slate-800 text-slate-200">
-      <div className="mx-auto max-w-7xl px-4 py-16 text-center">
+      <div className="mx-auto max-w-7xl px-4 py-8 md:py-10 text-center">
         <Image src={Logo} alt="Logo" className="mx-auto h-16 md:h-24 w-auto filter brightness-0 invert" />
 
         <p className="mx-auto mt-4 max-w-2xl text-sm text-slate-300">
@@ -16,9 +17,9 @@ export default function Footer() {
         </p>
 
         <div className="mt-6 flex items-center justify-center gap-6">
-          <div className="h-12 w-24 rounded bg-white/5" />
-          <div className="h-12 w-24 rounded bg-white/5" />
-          <div className="h-12 w-24 rounded bg-white/5" />
+         <div className="flex items-center justify-center">
+            <Image src={CustomerReview} alt="Customer review" className="object-contain w-full h-10 md:h-12" />
+          </div>
         </div>
 
         <div className="mt-8 flex flex-col items-center gap-3 text-sm">

@@ -1,7 +1,7 @@
 "use client";
 
-import React from "react";
 import { FiMapPin, FiMail, FiPhone } from "react-icons/fi";
+import LeadForm from "./LeadForm";
 
 export default function GetStarted() {
   return (
@@ -19,61 +19,22 @@ export default function GetStarted() {
               </p>
 
               <ul className="mt-6 space-y-3 text-slate-900">
-                <li className="flex items-center gap-3">
+                <li className="flex md:items-center md:justify-start justify-center gap-3">
                   <FiMapPin className="h-5 w-5 text-[var(--theme-primary-color)]" aria-hidden />
-                  <span>20333 State Highway 249, Houston, TX 77070</span>
+                  <span className="text-sm">20333 State Highway 249, Houston, TX 77070</span>
                 </li>
-                <li className="flex items-center gap-3">
+                <li className="flex md:items-center md:justify-start justify-center gap-3">
                   <FiMail className="h-5 w-5 text-[var(--theme-primary-color)]" aria-hidden />
-                  <span>info@westwoodauthors.com</span>
+                  <span className="text-sm">info@westwoodauthors.com</span>
                 </li>
-                <li className="flex items-center gap-3">
+                <li className="flex md:items-center md:justify-start justify-center gap-3">
                   <FiPhone className="h-5 w-5 text-[var(--theme-primary-color)]" aria-hidden />
-                  <span>+1 (346) 613-2030</span>
+                  <span className="text-sm">+1 (346) 613-2030</span>
                 </li>
               </ul>
             </div>
 
-            <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-              <div>
-                <label className="sr-only">Name</label>
-                <input
-                  placeholder="Name"
-                  className="w-full rounded-md border border-slate-200 px-4 py-3 text-sm outline-none focus:border-[var(--theme-primary-color)] focus:ring-2 focus:ring-orange-200"
-                />
-              </div>
-
-              <div>
-                <label className="sr-only">Email</label>
-                <input
-                  placeholder="Email address"
-                  className="w-full rounded-md border border-slate-200 px-4 py-3 text-sm outline-none focus:border-[var(--theme-primary-color)] focus:ring-2 focus:ring-orange-200"
-                />
-              </div>
-
-              <div>
-                <label className="sr-only">Phone</label>
-                <input
-                  placeholder="Phone"
-                  className="w-full rounded-md border border-slate-200 px-4 py-3 text-sm outline-none focus:border-[var(--theme-primary-color)] focus:ring-2 focus:ring-orange-200"
-                />
-              </div>
-
-              <div>
-                <label className="sr-only">Message</label>
-                <textarea
-                  placeholder="Message"
-                  rows={4}
-                  className="w-full rounded-md border border-slate-200 px-4 py-3 text-sm outline-none focus:border-[var(--theme-primary-color)] focus:ring-2 focus:ring-orange-200"
-                />
-              </div>
-
-              <div className="flex justify-start md:justify-start">
-                <button className="rounded-full bg-[var(--theme-primary-color)] px-6 py-3 text-sm font-semibold text-white shadow-lg">
-                  Get Started
-                </button>
-              </div>
-            </form>
+            <LeadForm onSubmit={(e) => e.preventDefault()} submitLabel="Get Started" />
           </div>
         </div>
       </div>

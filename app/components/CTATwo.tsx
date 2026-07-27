@@ -1,10 +1,13 @@
 import React from "react";
 
-export default function CTATwo() {
+interface CTATwoProps {
+  onPublishClick: () => void;
+}
+
+export default function CTATwo({ onPublishClick }: CTATwoProps) {
   return (
-    <section className="relative bg-[url('/images/cta-bg.jpg')] bg-cover bg-center text-white">
-      <div className="absolute inset-0 bg-slate-900/70" />
-      <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6">
+    <section className="relative bg-[url('/images/hhm-banner2.webp')] bg-cover bg-center text-white">
+      <div className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6">
         <div className="grid items-center gap-8 md:grid-cols-2">
           <div className="text-left">
             <h2 className="text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">
@@ -41,12 +44,13 @@ export default function CTATwo() {
               </li>
             </ul>
 
-            <a
-              href="#"
-              className="mt-8 inline-block rounded-full bg-[var(--theme-primary-color)] px-6 py-3 text-sm font-semibold text-white shadow-lg"
+            <button
+              type="button"
+              onClick={onPublishClick}
+              className="mt-8 inline-flex items-center justify-center rounded-full bg-[var(--theme-primary-color)] animate-theme-bounce animation-delay-200 px-6 py-3 text-sm font-semibold text-white shadow-lg"
             >
               Publish My Book
-            </a>
+            </button>
           </div>
 
           <div className="hidden md:block">

@@ -21,11 +21,83 @@ body {
   font-family: var(--font-poppins), sans-serif;
 }
 
+@layer utilities {
+  @keyframes bounce-theme {
+    0%, 20%, 100% {
+      transform: translateY(0);
+    }
+    10% {
+      transform: translateY(-8px);
+    }
+    15% {
+      transform: translateY(0);
+    }
+  }
+
+  .animate-theme-bounce {
+    animation: bounce-theme 3s ease-in-out infinite;
+    transform-origin: center bottom;
+  }
+
+  .animation-delay-100 {
+    animation-delay: 0.1s;
+  }
+  .animation-delay-150 {
+    animation-delay: 0.15s;
+  }
+  .animation-delay-200 {
+    animation-delay: 0.2s;
+  }
+  .animation-delay-250 {
+    animation-delay: 0.25s;
+  }
+  .animation-delay-300 {
+    animation-delay: 0.3s;
+  }
+
+  .ctathree {
+    position: relative;
+  }
+
+  .ctathree::before {
+    content: "";
+    position: absolute;
+    background: url("/images/cta-before.webp") center / 100% no-repeat;
+    width: 502px;
+    height: 270px;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    display: none;
+  }
+
+  .ctathree::after {
+    content: "";
+    position: absolute;
+    background: url("/images/cta-after.webp") center / cover no-repeat;
+    width: 400px;
+    height: 255px;
+    right: 0;
+    top: 60%;
+    transform: translateY(-50%);
+    z-index: 1;
+    display: none;
+  }
+
+  @media (min-width: 1024px) {
+    .ctathree::before,
+    .ctathree::after {
+      display: block;
+    }
+  }
+}
+
 .swiper-pagination-bullet {
-  background: rgba(51, 57, 75, 0.4);
-  opacity: 1;
+  /* background: var(--theme-primary-color); */
+  opacity: 0.35;
 }
 
 .swiper-pagination-bullet-active {
-  background: var(--theme-primary-color);
+  background: var(--theme-primary-color) !important;
+  opacity: 1;
 }
