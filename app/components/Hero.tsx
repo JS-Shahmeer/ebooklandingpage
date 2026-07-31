@@ -13,54 +13,43 @@ export function Hero({ onPublishClick }: HeroProps) {
         <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr] md:items-center">
           <div className="max-w-2xl">
             <h1 className="mt-6 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-              Transform Your Manuscript with <span className="text-orange-400">Our Amazon Book Publishing</span> Services
+              Your Book Deserves to Be Read. We&apos;ll Help You Publish It.
             </h1>
             <p className="mt-6 text-sm leading-7 text-slate-200">
-              We offer comprehensive publishing services that help authors publish their books on Amazon, Barnes & Noble, Lulu, Apple Books, IngramSpark, and other major book distribution platforms.
+              From your first draft to a finished book on Amazon, we handle editing, design, formatting and distribution so you don&apos;t have to figure it out alone.
             </p>
             <ul className="mt-8 space-y-3 text-sm leading-6 text-slate-200">
               <li className="flex items-start gap-3">
                 <FaCheck className="mt-1 h-4 w-4 shrink-0 text-orange-400" />
-                Expert Book Editing, Proofreading, and Formatting for Amazon
+                End-to-end publishing support from concept to launch
               </li>
               <li className="flex items-start gap-3">
                 <FaCheck className="mt-1 h-4 w-4 shrink-0 text-orange-400" />
-                Custom Book Cover Design with 10 Revisions for Self-Publishing
+                Professional editing, design, layout, and distribution
               </li>
               <li className="flex items-start gap-3">
                 <FaCheck className="mt-1 h-4 w-4 shrink-0 text-orange-400" />
-                Free ISBN for your self-published book
-              </li>
-              <li className="flex items-start gap-3">
-                <FaCheck className="mt-1 h-4 w-4 shrink-0 text-orange-400" />
-                Publishing in both e-book and paperback formats on Amazon
-              </li>
-              <li className="flex items-start gap-3">
-                <FaCheck className="mt-1 h-4 w-4 shrink-0 text-orange-400" />
-                10 Printed Paperbacks shipped directly to your doorstep from Amazon
+                Guidance tailored for first-time and experienced authors
               </li>
             </ul>
             <div className="mt-10 flex flex-wrap gap-4">
-              <a
-                href="#"
-                className="inline-flex items-center justify-center rounded-full bg-[var(--theme-primary-color)] animate-theme-bounce animation-delay-100 px-8 py-3 text-sm font-semibold text-white shadow-lg transition duration-200 hover:-translate-y-1 hover:opacity-95"
-              >
-                Chat Now
-              </a>
               <button
                 type="button"
                 onClick={onPublishClick}
-                className="inline-flex items-center justify-center rounded-full border border-white/25 px-8 py-3 text-sm font-semibold text-white transition duration-200 hover:-translate-y-1 hover:bg-white/10"
+                className="inline-flex items-center justify-center rounded-full bg-[var(--theme-primary-color)] animate-theme-bounce animation-delay-100 px-8 py-3 text-sm font-semibold text-white shadow-lg transition duration-200 hover:-translate-y-1 hover:opacity-95"
               >
-                Publish My Book
+                Get My Free Publishing Consultation
               </button>
               <a
                 href="tel:+13466132030"
                 className="inline-flex items-center justify-center rounded-full border border-white/25 px-8 py-3 text-sm font-semibold text-white transition duration-200 hover:-translate-y-1 hover:bg-white/10"
               >
-                Call Now
+                Call Us Now
               </a>
             </div>
+            <p className="mt-4 text-sm text-slate-300">
+              Trusted by first time authors and seasoned writers alike. Real books. Real launches. Real support.
+            </p>
           </div>
 
           <div className="rounded-2xl border border-white/10 text-slate-900 bg-white/95 p-6 shadow-2xl sm:p-8">

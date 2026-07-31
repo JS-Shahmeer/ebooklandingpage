@@ -33,7 +33,7 @@ export default function Home() {
       <CTATwo onPublishClick={() => setIsModalOpen(true)} />
       <CTAThree onPublishClick={() => setIsModalOpen(true)} />
       <WhyChooseUs />
-      <OurSteps />
+      <OurSteps onOpenModal={() => setIsModalOpen(true)} />
       <GetStarted />
       <Footer />
     </main>

@@ -10,12 +10,13 @@ export default function CTAThree({ onPublishClick }: CTAThreeProps) {
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <div className="relative z-10 text-center">
           <h2 className="text-4xl font-extrabold leading-tight sm:text-5xl">
-            Start Your Publishing Journey Today!
-            <br />
-            <span className="mt-4 block text-base font-normal sm:text-lg">
-              Hire our book publishing company to get comprehensive publishing services under one roof.
-            </span>
+            Your Book Has Been Waiting Long Enough
           </h2>
+
+          <p className="mx-auto mt-4 max-w-2xl text-base font-normal leading-7 sm:text-lg">
+            You did the hard part already. You wrote it. Let us handle the
+            rest, from editing to your first sale.
+          </p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <button
@@ -36,7 +37,7 @@ export default function CTAThree({ onPublishClick }: CTAThreeProps) {
               title="Live Chat"
               className="inline-flex items-center justify-center rounded-full border border-white/40 bg-white/10 px-8 py-3 text-sm font-semibold text-white transition duration-200 hover:bg-white/20"
             >
-              Live Chat
+              Chat With Us
             </a>
           </div>
         </div>

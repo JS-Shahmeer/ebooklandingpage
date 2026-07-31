@@ -10,23 +10,53 @@ import ReviewImage from "@/public/images/review-img.webp";
 const testimonials = [
   {
     quote:
-      "My unique book aimed for a movie adaptation. Initially self-written, I felt something lacked. A friend recommended Nexell Book Writing. Peter Brown and team provided a perfect project plan, and I signed immediately. The process has been smooth, no regrets. Excited for the release.",
-    author: "Michael",
+      "I'd been putting off publishing for almost two years because the process seemed too complicated. They made it incredibly easy, and now my book is finally available on Amazon.",
+    author: "Emily Carter",
   },
   {
     quote:
-      "They crafted a well-produced audiobook based on my requests. Easy to follow and organized, it felt like reading from a book. The comforting tone and overall quality were admirable. Their work ethics and professionalism were top-notch.",
-    author: "Amanda",
+      "I thought my manuscript was ready until Amazon kept rejecting it. They fixed the formatting, uploaded everything correctly, and had my book live in no time.",
+    author: "Jason Mitchell",
   },
   {
     quote:
-      "Kevin Miles and the team did an excellent job editing, formatting, and publishing my book. Their patience and tenacity were exceptional. Great job, everyone—really appreciate your work. Keep it up!",
-    author: "Scott",
+      "Writing my book was the easy part. Figuring out Kindle formatting, paperback setup, and cover design was a completely different story. They handled every detail and kept me updated throughout the process. I finally have a book I'm genuinely proud to share.",
+    author: "Sophia Reynolds",
   },
-   {
+  {
     quote:
-      "My unique book aimed for a movie adaptation. Initially self-written, I felt something lacked. A friend recommended Nexell Book Writing. Peter Brown and team provided a perfect project plan, and I signed immediately. The process has been smooth, no regrets. Excited for the release.",
-    author: "Miller",
+      "I had already hired someone else to publish my ebook, but the final product looked amateur and had formatting issues on multiple devices. I was frustrated and honestly ready to give up. They redesigned the cover, reformatted the manuscript, explained everything in plain English, and republished it properly. The finished book looks exactly how I imagined it, and I couldn't be happier with the result.",
+    author: "David Bennett",
+  },
+  {
+    quote:
+      "I had no idea what an ISBN was or how Amazon KDP actually worked. Every guide I found online just made things more confusing. Having someone manage the entire publishing process saved me weeks of trial and error. My book was published without the stress I expected.",
+    author: "Megan Foster",
+  },
+  {
+    quote:
+      "Seeing my book arrive in print for the first time was an unforgettable moment. They took care of everything that was stopping me from getting there.",
+    author: "Chris Alvarez",
+  },
+  {
+    quote:
+      "As a first-time author, I assumed publishing would be as simple as uploading a file. Instead, I found myself dealing with formatting errors, cover specifications, metadata, keywords, and endless technical requirements. They guided me through every step, answered every question, and delivered a professional result that exceeded my expectations. I only wish I'd found them sooner.",
+    author: "Rachel Thompson",
+  },
+  {
+    quote:
+      "Professional, responsive, and made publishing feel effortless.",
+    author: "Brandon Lewis",
+  },
+  {
+    quote:
+      "I almost convinced myself that self-publishing wasn't worth the hassle. They proved me wrong. From the cover design to the final upload, everything was handled professionally, and the finished book looks incredible.",
+    author: "Natalie Brooks",
+  },
+  {
+    quote:
+      "I spent months trying to learn everything myself because I wanted to save money. Looking back, I wasted far more time than I needed to. They took over the entire publishing process, corrected mistakes I didn't even know I'd made, and helped me launch both my ebook and paperback successfully. It was easily the best investment I made in my book.",
+    author: "Connor Hughes",
   },
 ];
 

@@ -16,10 +16,8 @@ export default function Footer() {
         />
 
         <p className="mx-auto mt-4 max-w-2xl text-sm text-slate-200">
-          Calling all independent authors! Nexell Book Writing empowers you to
-          self-publish and market your book on Amazon. We're committed to
-          ethical practices and provide well-researched information. Let's turn
-          your writing dream into a reality—contact us today!
+          We help independent authors publish and market their books with honest
+          guidance and real support, every step of the way.
         </p>
 
         <div className="mt-6 flex items-center justify-center gap-6">
@@ -33,7 +31,6 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 flex flex-col items-center gap-3 text-sm">
-         
           <p>All Rights Reserved 2026</p>
         </div>
 

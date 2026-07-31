@@ -12,20 +12,18 @@ export default function PublishSection({ onPublishClick }: PublishSectionProps) 
         <div className="grid items-center gap-8 md:grid-cols-[70%_30%]">
           <div className="order-2 md:order-1">
             <h2 className="mb-6 max-w-2xl text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl">
-              REACH READERS EVERYWHERE WITH
+              We Treat Your Book Like It's the
               <span className="text-[var(--theme-primary-color)]">
                 {" "}
-                OUR AMAZON BOOK PUBLISHING
+                Only One We're Working On
               </span>
             </h2>
 
             <p className="mb-8 max-w-2xl text-sm leading-7 text-slate-200">
-              Have you written a book and dream of sharing it with the world?
-              We're a reliable and affordable publishing company with a vast
-              network to get your book into readers' hands everywhere. We offer
-              various Book Publishing Services, including Self-Publishing on
-              Amazon, Children's Book Publishing, and navigating traditional
-              publishing.
+              Big publishing houses aren't built for first time or independent
+              authors. We are. Every manuscript gets a dedicated point of
+              contact, not a rotating cast of people who've never read your
+              work.
             </p>
 
             <div className="flex flex-wrap gap-4">

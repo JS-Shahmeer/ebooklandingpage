@@ -8,33 +8,37 @@ import {
 
 const steps = [
   {
-    title: "Contact Us",
-    desc: "In the first step of the book publishing process, you'll contact our book publishing company to discuss your publishing goals and learn more about your book.",
+    title: "We Talk About Your Book",
+    desc: "A short conversation to understand your goals, your genre and where your manuscript currently stands.",
     icon: FiMessageSquare,
   },
   {
-    title: "Submit Your Manuscript",
-    desc: "Send us your completed manuscript. Our expert writers and editors will review and provide feedback to prepare it for publishing.",
+    title: "You Send Us Your Manuscript",
+    desc: "Our editors read it, mark it up and send back honest, practical feedback.",
     icon: FiFileText,
   },
   {
-    title: "Bring Your Book To Life",
-    desc: "We finalize edits and design elements to turn your manuscript into a published work of art.",
+    title: "We Bring It to Life",
+    desc: "Editing, cover design and formatting come together into a finished, publish ready book.",
     icon: FiEdit3,
   },
   {
-    title: "Share Your Story",
-    desc: "We'll handle printing, distribution, and marketing support so you can share your story with the world.",
+    title: "Your Book Goes Live",
+    desc: "We handle the upload, distribution and printing, and you get to hold your own book in your hands.",
     icon: FiSend,
   },
 ];
 
-export default function OurSteps() {
+interface OurStepsProps {
+  onOpenModal?: () => void;
+}
+
+export default function OurSteps({ onOpenModal }: OurStepsProps) {
   return (
     <section className="py-16 px-4 bg-white">
       <div className="mx-auto max-w-7xl text-center">
-        <h2 className="text-3xl font-extrabold sm:text-4xl">MAKE YOUR PUBLISHING DREAMS A REALITY WITH</h2>
-        <p className="mt-2 text-lg font-extrabold text-[var(--theme-primary-color)]">OUR 4-STEP PUBLISHING PROCESS</p>
+        <h2 className="text-3xl font-extrabold sm:text-4xl">Our Process</h2>
+        <p className="mx-auto mt-3 max-w-3xl text-lg text-slate-600">How We Take Your Manuscript From Draft to Published Book</p>
 
         <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {steps.map((s, i) => {
@@ -50,6 +54,16 @@ export default function OurSteps() {
               </div>
             );
           })}
+        </div>
+
+        <div className="mt-10 flex justify-center">
+          <button
+            type="button"
+            onClick={onOpenModal}
+            className="rounded-full bg-[var(--theme-primary-color)] px-8 py-3 text-sm font-semibold text-white shadow-lg transition duration-200 hover:-translate-y-1 hover:opacity-95"
+          >
+            Start My Publishing Journey
+          </button>
         </div>
       </div>
     </section>

@@ -9,8 +9,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Nexell Book Writing",
-  description: "Description of Nexell Book Writing",
+  title: "Book Publishing Services for Independent Authors | Nexell Book Writing",
+  description:
+    "Professional book publishing services for independent authors, including Amazon publishing, ebook publishing, and children’s book publishing with expert support.",
 };
 
 export default function RootLayout({

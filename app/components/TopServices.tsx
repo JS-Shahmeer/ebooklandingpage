@@ -8,28 +8,28 @@ import {
 
 const services = [
   {
-    title: "Manuscript Assessment",
+    title: "Book Publishing, Done Right",
     icon: FiBookOpen,
     desc:
-      "In order to assist authors in determining if their work is ready for publication and to provide expert criticism for enhancement, we provide manuscript evaluation services.",
+      "Whether this is your first manuscript or your fifth, getting a book into readers' hands takes more than hitting upload on a platform. We manage the details that make a book look and read like it came from a real publisher, because that's exactly what readers (and Amazon's algorithm) respond to.",
   },
   {
-    title: "Translation",
+    title: "Self Book Publishing, Without the Guesswork",
     icon: FiGlobe,
     desc:
-      "Translating written material from one language into another enables authors to reach a wider readership and sell more copies of their publications.",
+      "Self publishing gives you control over your work and a bigger share of your royalties, but it also means juggling editing, design, formatting and distribution on your own. We built our process specifically for independent authors who want that control without the overwhelm.",
   },
   {
-    title: "Distribution",
+    title: "Ebook Publishing That Reaches Readers Fast",
     icon: FiPackage,
     desc:
-      "We are among the top self-publishing businesses because of our extensive distribution network. We also take care of the authors' printing and distribution, which makes it simpler for them to self-publish on multiple platforms and reach global readers.",
+      "Ebooks are often the quickest way to get your book in front of readers, and they open the door to a global audience. We format and publish your ebook across major platforms so it looks clean on every device, from Kindle to tablets to phones.",
   },
   {
-    title: "Promotion",
+    title: "Children's Book Publishing, Built for Little Readers and Their Grown Ups",
     icon: FiTrendingUp,
     desc:
-      "Our team of professionals offers marketing assistance, such as press releases and social media promotion, to authors so they may contact their audience and market their work.",
+      "Children's books live and die by their illustrations and layout. We work with illustrators and designers who understand pacing, page turns and the little details that make a picture book actually work for the age group it's written for.",
   },
 ];
 
@@ -49,16 +49,16 @@ export default function TopServices() {
             return (
               <article
                 key={idx}
-                className="flex flex-col rounded-lg bg-white p-6 shadow-md ring-1 ring-slate-100 md:h-96"
+                className="flex flex-col rounded-lg bg-white p-4 shadow-md ring-1 ring-slate-100 md:h-80"
               >
-                <div className="flex items-center gap-4">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-full bg-slate-100 p-3 text-[var(--theme-primary-color)]">
-                    <Icon className="h-8 w-8" aria-hidden="true" />
+                <div className="flex items-center gap-3">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-slate-100 p-2 text-[var(--theme-primary-color)]">
+                    <Icon className="h-6 w-6" aria-hidden="true" />
                   </div>
-                  <h3 className="md:text-lg text-base font-semibold text-slate-900 text-left">{s.title}</h3>
+                  <h3 className="text-xs font-semibold text-slate-900 text-left sm:text-sm">{s.title}</h3>
                 </div>
 
-                <div className="mt-4 flex-1 overflow-y-auto pr-2 text-sm leading-7 text-slate-700">
+                <div className="mt-3 flex-1 overflow-y-auto pr-2 text-xs leading-6 text-slate-700">
                   {s.desc}
                 </div>
               </article>
