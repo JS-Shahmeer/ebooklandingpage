@@ -23,7 +23,9 @@ body {
 
 @layer utilities {
   @keyframes bounce-theme {
-    0%, 20%, 100% {
+    0%,
+    20%,
+    100% {
       transform: translateY(0);
     }
     10% {
@@ -34,9 +36,33 @@ body {
     }
   }
 
+  @keyframes marquee-slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
   .animate-theme-bounce {
     animation: bounce-theme 3s ease-in-out infinite;
     transform-origin: center bottom;
+  }
+
+  .marquee-track {
+    animation: marquee-slide 22s linear infinite;
+    will-change: transform;
+  }
+
+  .marquee-track:hover {
+    animation-play-state: paused;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-track {
+      animation: none;
+    }
   }
 
   .animation-delay-100 {
@@ -63,31 +89,37 @@ body {
     content: "";
     position: absolute;
     background: url("/images/cta-before.webp") center / 100% no-repeat;
-    width: 502px;
-    height: 270px;
+    width: 132px;
+    height: 150px;
     left: 0;
     top: 0;
     z-index: 1;
-    display: none;
+    /* display: none; */
   }
 
   .ctathree::after {
     content: "";
     position: absolute;
     background: url("/images/cta-after.webp") center / cover no-repeat;
-    width: 400px;
-    height: 255px;
+    width: 132px;
+    height: 150px;
     right: 0;
-    top: 60%;
+    top: 80%;
     transform: translateY(-50%);
     z-index: 1;
-    display: none;
+    /* display: none; */
   }
 
   @media (min-width: 1024px) {
     .ctathree::before,
     .ctathree::after {
       display: block;
+      width: 252px;
+      height: 270px;
+    }
+    .ctathree::after {
+      top: 60%;
+
     }
   }
 }

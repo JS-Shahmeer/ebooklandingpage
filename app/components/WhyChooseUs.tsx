@@ -34,13 +34,13 @@ export default function WhyChooseUs() {
           <div className="col-span-1">
             <div className="hidden md:flex flex-col items-center gap-4">
               <div className="relative aspect-[4/5] w-full overflow-hidden rounded-lg">
-                <Image src={WhyImage} alt="Why choose us" fill className="object-cover" />
+                <Image src={WhyImage} alt="Why choose us" fill className="object-contain" />
               </div>
             </div>
 
             <div className="md:hidden mb-6">
               <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg">
-                <Image src={WhyImage} alt="Why choose us" fill className="object-cover" />
+                <Image src={WhyImage} alt="Why choose us" fill className="object-contain" />
               </div>
             </div>
           </div>

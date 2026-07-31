@@ -11,7 +11,7 @@ export default function AmazonPublishingServices() {
         </h2>
         <div className="flex justify-center">
           <div className="relative w-full sm:w-4/5">
-            <div className="aspect-[10/6]">
+            <div className="max-w-2xl mx-auto">
               <Image
                 src={CenteredImage}
                 alt="Amazon publishing services book showcase"

@@ -7,8 +7,8 @@ interface HeroProps {
 export function Hero({ onPublishClick }: HeroProps) {
   return (
     <section className="relative overflow-hidden bg-slate-950 text-white md:pt-28 pt-24 pb-10">
-      {/* <div className="absolute inset-0 bg-[url('/images/hero-bg.jpg')] bg-cover bg-center opacity-60" />
-      <div className="absolute inset-0 bg-slate-950/80" /> */}
+      <div className="absolute inset-0 bg-[url('/images/hero-bg.webp')] bg-cover bg-center opacity-60" />
+      <div className="absolute inset-0 bg-slate-950/75" />
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
         <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr] md:items-center">
           <div className="max-w-2xl">
@@ -63,7 +63,7 @@ export function Hero({ onPublishClick }: HeroProps) {
             </div>
           </div>
 
-          <div className="rounded-[2rem] border border-white/10 text-slate-900 bg-white/95 p-6 shadow-2xl sm:p-8">
+          <div className="rounded-2xl border border-white/10 text-slate-900 bg-white/95 p-6 shadow-2xl sm:p-8">
             <div className="mb-4">
               
               <h2 className="text-2xl font-semibold text-slate-950">

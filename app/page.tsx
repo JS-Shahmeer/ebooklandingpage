@@ -3,7 +3,8 @@
 import { useState } from "react";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
-import FeaturedProjects from "./components/FeaturedProjects";
+// import FeaturedProjects from "./components/FeaturedProjects";
+import FeaturedProjectsSlider from "./components/FeaturedProjectsSlider";
 import { ClientTestimonials } from "./components/ClientTestimonials";
 import AmazonPublishingServices from "./components/AmazonPublishingServices";
 import PublishSection from "./components/PublishSection";
@@ -24,7 +25,7 @@ export default function Home() {
       <Header onQuoteClick={() => setIsModalOpen(true)} />
       <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} onSubmit={(e) => e.preventDefault()} />
       <Hero onPublishClick={() => setIsModalOpen(true)} />
-      <FeaturedProjects />
+      <FeaturedProjectsSlider />
       <ClientTestimonials />
       <AmazonPublishingServices />
       <PublishSection onPublishClick={() => setIsModalOpen(true)} />
