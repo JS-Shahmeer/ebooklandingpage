@@ -7,7 +7,7 @@ interface CTATwoProps {
 export default function CTATwo({ onPublishClick }: CTATwoProps) {
   return (
     <section className="relative text-white">
-      <div className="absolute inset-0 bg-[url('/images/hhm-banner2.webp')] bg-cover bg-center opacity-60" />
+      <div className="absolute inset-0 bg-[url('/images/hhm-banner2.webp')] bg-cover bg-bottom opacity-60" />
       <div className="absolute inset-0 bg-slate-950/70" />
       <div className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6">
         <div className="grid items-center gap-8 md:grid-cols-2">

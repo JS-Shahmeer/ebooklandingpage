@@ -10,52 +10,52 @@ import ReviewImage from "@/public/images/review-img.webp";
 const testimonials = [
   {
     quote:
-      "I'd been putting off publishing for almost two years because the process seemed too complicated. They made it incredibly easy, and now my book is finally available on Amazon.",
+      "I'd been putting off publishing for almost two years because the process felt overwhelming. They made everything simple, handled every technical step, and kept me informed throughout. Now my book is finally live on Amazon, and the entire experience was far easier than I expected.",
     author: "Emily Carter",
   },
   {
     quote:
-      "I thought my manuscript was ready until Amazon kept rejecting it. They fixed the formatting, uploaded everything correctly, and had my book live in no time.",
+      "I thought my manuscript was ready until Amazon rejected it multiple times. They fixed the formatting, corrected the upload issues, and explained what went wrong. Within days my book was published successfully, and the final result looked polished and completely professional.",
     author: "Jason Mitchell",
   },
   {
     quote:
-      "Writing my book was the easy part. Figuring out Kindle formatting, paperback setup, and cover design was a completely different story. They handled every detail and kept me updated throughout the process. I finally have a book I'm genuinely proud to share.",
+      "Writing my book was only half the journey. They handled Kindle formatting, paperback setup, cover design, and every publishing detail with great care. The communication was excellent throughout, and I finally have a book I'm genuinely proud to share with readers.",
     author: "Sophia Reynolds",
   },
   {
     quote:
-      "I had already hired someone else to publish my ebook, but the final product looked amateur and had formatting issues on multiple devices. I was frustrated and honestly ready to give up. They redesigned the cover, reformatted the manuscript, explained everything in plain English, and republished it properly. The finished book looks exactly how I imagined it, and I couldn't be happier with the result.",
+      "After a disappointing experience with another publisher, I was ready to give up. They redesigned my cover, reformatted the manuscript, corrected every issue, and republished everything properly. The finished book looks exactly as I imagined, and I couldn't be happier with the outcome.",
     author: "David Bennett",
   },
   {
     quote:
-      "I had no idea what an ISBN was or how Amazon KDP actually worked. Every guide I found online just made things more confusing. Having someone manage the entire publishing process saved me weeks of trial and error. My book was published without the stress I expected.",
+      "I had no idea how ISBNs, Amazon KDP, or the publishing process actually worked. Every guide I found seemed confusing. They handled everything from start to finish, answered every question clearly, and made publishing my book completely stress-free and straightforward.",
     author: "Megan Foster",
   },
   {
     quote:
-      "Seeing my book arrive in print for the first time was an unforgettable moment. They took care of everything that was stopping me from getting there.",
+      "Holding my printed book for the first time was an unforgettable experience. They managed every step that had been holding me back, from formatting to publishing, and made the entire process smooth, professional, and surprisingly enjoyable from beginning to end.",
     author: "Chris Alvarez",
   },
   {
     quote:
-      "As a first-time author, I assumed publishing would be as simple as uploading a file. Instead, I found myself dealing with formatting errors, cover specifications, metadata, keywords, and endless technical requirements. They guided me through every step, answered every question, and delivered a professional result that exceeded my expectations. I only wish I'd found them sooner.",
+      "As a first-time author, I quickly realized publishing involved much more than uploading a file. They guided me through formatting, cover requirements, metadata, and every technical detail. Their expertise saved me countless hours and delivered a result beyond my expectations.",
     author: "Rachel Thompson",
   },
   {
     quote:
-      "Professional, responsive, and made publishing feel effortless.",
+      "Professional, responsive, and incredibly easy to work with from start to finish. Every question was answered quickly, deadlines were met, and the entire publishing process felt effortless. My finished book looks fantastic, and I wouldn't hesitate to recommend their services to others.",
     author: "Brandon Lewis",
   },
   {
     quote:
-      "I almost convinced myself that self-publishing wasn't worth the hassle. They proved me wrong. From the cover design to the final upload, everything was handled professionally, and the finished book looks incredible.",
+      "I almost gave up on self-publishing because it seemed far too complicated. They handled everything from cover design to the final Amazon upload with professionalism and care. The finished book exceeded my expectations, and I'm so glad I trusted them with the process.",
     author: "Natalie Brooks",
   },
   {
     quote:
-      "I spent months trying to learn everything myself because I wanted to save money. Looking back, I wasted far more time than I needed to. They took over the entire publishing process, corrected mistakes I didn't even know I'd made, and helped me launch both my ebook and paperback successfully. It was easily the best investment I made in my book.",
+      "I spent months trying to do everything myself before realizing how much time I was wasting. They corrected mistakes, managed the publishing process, and helped launch both my ebook and paperback successfully. It was easily the best investment I made for my book.",
     author: "Connor Hughes",
   },
 ];
@@ -88,7 +88,7 @@ export function ClientTestimonials() {
         >
           {testimonials.map((item, index) => (
             <SwiperSlide className="py-8" key={index}>
-              <div className="mx-auto max-w-3xl rounded-[32px] bg-white p-8 shadow-lg ring-1 ring-slate-200 max-h-[360px] overflow-auto">
+              <div className="mx-auto max-w-3xl rounded-[32px] bg-white p-8 shadow-lg ring-1 ring-slate-200 md:min-h-[470px] min-h-[430px] flex flex-col justify-evenly">
                 <div className="flex justify-center">
                   <div className="flex space-x-2">
                     {Array.from({ length: 5 }).map((_, starIndex) => (
@@ -96,7 +96,7 @@ export function ClientTestimonials() {
                     ))}
                   </div>
                 </div>
-                <p className="mt-6 text-center text-base leading-8 text-slate-700">{item.quote}</p>
+                <p className="mt-6 text-center md:text-base text-sm md:leading-8 leading-7 text-slate-700">{item.quote}</p>
                 <p className="mt-6 text-center text-lg font-semibold text-[var(--theme-primary-color)]">{item.author}</p>
               </div>
             </SwiperSlide>

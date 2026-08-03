@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="text-slate-200 relative">
       <div className="absolute inset-0 bg-[url('/images/footer-bg.webp')] bg-cover bg-center opacity-60" />
-      <div className="absolute inset-0 bg-slate-950/75" />
+      <div className="absolute inset-0 bg-slate-950/85" />
       <div className="mx-auto max-w-7xl px-4 py-8 md:py-10 text-center relative z-[1]">
         <Image
           src={Logo}

@@ -9,7 +9,7 @@ export default function PublishSection({ onPublishClick }: PublishSectionProps) 
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 to-slate-800 text-white md:pt-12 pt-8 pb-10">
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="grid items-center gap-8 md:grid-cols-[70%_30%]">
+        <div className="grid items-center gap-8 md:grid-cols-[60%_40%]">
           <div className="order-2 md:order-1">
             <h2 className="mb-6 max-w-2xl text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl">
               We Treat Your Book Like It's the

@@ -8,7 +8,7 @@ export function Hero({ onPublishClick }: HeroProps) {
   return (
     <section className="relative overflow-hidden bg-slate-950 text-white md:pt-28 pt-24 pb-10">
       <div className="absolute inset-0 bg-[url('/images/hero-bg.webp')] bg-cover bg-center opacity-60" />
-      <div className="absolute inset-0 bg-slate-950/75" />
+      <div className="absolute inset-0 bg-slate-950/90" />
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
         <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr] md:items-center">
           <div className="max-w-2xl">
